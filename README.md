@@ -16,7 +16,7 @@ Schrijf een nieuwe SDkaart met je favoriete OS.
 Deze handleiding is identiek voor zowel de Raspberry Pi 3/4/Zero/W als de Nvidia Jetson Nano/Xavier NX   
    
 Bij gebruik van Raspbian OS of Nvidia Jetpack zijn alle benodigdheden standaard geinstalleerd.   
-Zorg dat er een recenty Python versie en een recente versie van nano geinstalleerd is.   
+Zorg dat er een recente Python versie en een recente versie van nano geinstalleerd is.   
    
 Installeer Git om deze repository te clonen, of kopieer de code uit robot.py naar een nieuw uitvoerbaar document.   
 Clone de repository:   
