@@ -17,7 +17,7 @@ Deze handleiding is identiek voor zowel de Raspberry Pi 3/4/Zero/W als de Nvidia
    
 Bij gebruik van Raspbian OS of Nvidia Jetpack zijn alle benodigdheden standaard geinstalleerd.   
 Zorg dat er een recente Python versie en een recente versie van nano geinstalleerd is.   
-   
+**Gebruik:**     
 Installeer Git om deze repository te clonen, of kopieer de code uit test.py naar een nieuw uitvoerbaar document.   
 Clone de repository:   
 ```
@@ -30,4 +30,12 @@ python test.py
 Bewerk het volledig becommentarieerde script met:   
 ```
 nano test.py
+```
+*Help, mijn servo heeft een epileptische aanval!*
+
+Bij het gebruiken van een extra verlengkabel of tussenstap op een breadboard kan het zijn dat de PWM (die gebruikt wordt om de servo aan te sturen) niet krachtig genoeg is of fouten veroorzaakt.
+
+Gebruik in dat geval
+```
+python test2.py
 ```
