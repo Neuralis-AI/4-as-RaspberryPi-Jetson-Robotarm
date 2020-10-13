@@ -18,16 +18,16 @@ Deze handleiding is identiek voor zowel de Raspberry Pi 3/4/Zero/W als de Nvidia
 Bij gebruik van Raspbian OS of Nvidia Jetpack zijn alle benodigdheden standaard geinstalleerd.   
 Zorg dat er een recente Python versie en een recente versie van nano geinstalleerd is.   
    
-Installeer Git om deze repository te clonen, of kopieer de code uit robot.py naar een nieuw uitvoerbaar document.   
+Installeer Git om deze repository te clonen, of kopieer de code uit test.py naar een nieuw uitvoerbaar document.   
 Clone de repository:   
 ```
 git clone https://github.com/Neuralis-AI/4-as-RaspberryPi-Jetson-Robotarm.git
 ```
 Run het script met:   
 ```
-python robot.py
+python test.py
 ```
 Bewerk het volledig becommentarieerde script met:   
 ```
-nano robot.py
+nano test.py
 ```
