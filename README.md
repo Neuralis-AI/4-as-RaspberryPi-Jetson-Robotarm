@@ -35,7 +35,7 @@ nano test.py
 
 Bij het gebruiken van een extra verlengkabel of tussenstap op een breadboard kan het zijn dat de PWM (die gebruikt wordt om de servo aan te sturen) niet krachtig genoeg is of fouten veroorzaakt.
 
-Gebruik in dat geval
+Gebruik in dat geval de pigpiod library die de ingebouwde PWM vervangt.
 ```
 sudo apt install pigpiod
 sudo pip3 install pigpio
