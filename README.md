@@ -37,5 +37,6 @@ Bij het gebruiken van een extra verlengkabel of tussenstap op een breadboard kan
 
 Gebruik in dat geval
 ```
-python test2.py
+sudo pip3 install pigpio
+python3 test2.py
 ```
