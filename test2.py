@@ -1,12 +1,18 @@
 #!/usr/bin/python3
+
+# Allereerst enkel verklaringen:
+# GPIO: De 40-pins connector: https://learn.sparkfun.com/tutorials/raspberry-gpio/gpio-pinout
+# BCM: De interne benaming van de GPIO pin
+# 
+
 import RPi.GPIO as GPIO
 import pigpio
 import time
 
-grijperPIN = 17 #Board pin 11, BCM pin 17
-bovenoPIN = 27 #Board pin 13, BCM pin 27
-linksrPIN = 22 #Board pin 15, BCM pin 22
-vooraPIN = 23 #Board pin 16, BCM pin 23
+grijperPIN = 17 # Board pin 11, BCM pin 17
+bovenoPIN = 27 # Board pin 13, BCM pin 27
+linksrPIN = 22 # Board pin 15, BCM pin 22
+vooraPIN = 23 # Board pin 16, BCM pin 23
 
 pwm = pigpio.pi()
 pwm.set_mode(grijperPIN, pigpio.OUTPUT) # schakel GPIO pin op output (standaard input)
@@ -19,11 +25,11 @@ pwm.set_PWM_frequency( bovenoPIN, 50 ) # boven/onder
 pwm.set_PWM_frequency( linksrPIN, 50 ) # links/rechts
 pwm.set_PWM_frequency( vooraPIN, 50 ) # voor/achter
 
-print( "0 graden" )
+print( "0 graden" ) # zeg "0 graden" in de console om mee te volgen welke stap als volgend wordt uitgevoerd
 pwm.set_servo_pulsewidth( grijperPIN, 500 ) ; # Zet grijper op positie 0 (dicht)
-pwm.set_servo_pulsewidth( bovenoPIN, 500 ) ;
-pwm.set_servo_pulsewidth( linksrPIN, 500 ) ;
-pwm.set_servo_pulsewidth( vooraPIN, 500 ) ;
+pwm.set_servo_pulsewidth( bovenoPIN, 500 ) ; # Zet boven/onder op positie 0 (helemaal boven)
+pwm.set_servo_pulsewidth( linksrPIN, 500 ) ; # Zet links/rechts op positie 0 (helemaal links)
+pwm.set_servo_pulsewidth( vooraPIN, 500 ) ; # Zet voor/achter op positie 0 (helemaal vooruit)
 time.sleep( 3 )
 
 print( "90 graden" )
