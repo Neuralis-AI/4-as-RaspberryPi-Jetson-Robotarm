@@ -42,3 +42,17 @@ sudo pip3 install pigpio
 sudo pigpiod
 python3 test2.py
 ```
+
+Wil je liever de robot besturen met jet toetsenbord?
+```
+sudo apt install pigpiod
+sudo pip3 install pigpio
+sudo pigpiod
+python3 keycontrol.py
+```
+Controls:
+
+Q+E grijper
+A+D links/rechts
+W+S boven/onder
+R+F voor/achter
