@@ -43,7 +43,7 @@ sudo pigpiod
 python3 test2.py
 ```
 
-Wil je liever de robot besturen met jet toetsenbord?
+Wil je liever de robot besturen met je toetsenbord?
 ```
 sudo apt install pigpiod
 sudo pip3 install pigpio
