@@ -50,9 +50,9 @@ sudo pip3 install pigpio
 sudo pigpiod
 python3 keycontrol.py
 ```
-Controls:
-
-Q+E grijper
-A+D links/rechts
-W+S boven/onder
-R+F voor/achter
+Controls:  
+  
+Q+E grijper  
+A+D links/rechts  
+W+S boven/onder  
+R+F voor/achter  
