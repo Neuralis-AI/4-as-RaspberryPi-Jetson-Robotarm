@@ -56,3 +56,4 @@ Q+E grijper
 A+D links/rechts  
 W+S boven/onder  
 R+F voor/achter  
+P stoppen
